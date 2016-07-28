@@ -33,3 +33,7 @@ cache.properties.lock
 app/fabric.properties
 app/src/main/res/values/keys.xml
 app/src/main/res/values/keys.xml
+<<<<<<< HEAD
+=======
+crashlytics.properties
+>>>>>>> f58b90ae64a2443c2649c22d1e96cbd4deb811a4
