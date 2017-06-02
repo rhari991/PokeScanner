@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSearchLocation"
+            android:hint="Enter location"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:padding="15dp"
+            android:imeOptions="actionDone"
+            android:background="@color/white"
+            android:elevation="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Recent :"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recentLocationsListView"
+            android:headerDividersEnabled="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Done"
+        android:id="@+id/btnDone"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

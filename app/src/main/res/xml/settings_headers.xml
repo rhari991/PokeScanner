@@ -1,0 +1,77 @@
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <header
+        android:fragment="com.pokescanner.settings.SettingsFragment"
+        android:title="@string/donate"
+        android:summary="@string/category_donate" >
+        <extra
+            android:name="page"
+            android:value="donatePage"/>
+    </header>
+
+    <header
+        android:fragment="com.pokescanner.settings.SettingsFragment"
+        android:title="@string/category_filters"
+        android:summary="@string/filter_options_desc" >
+        <extra
+            android:name="page"
+            android:value="filterOptions"/>
+    </header>
+
+    <header
+        android:title="Manage Accounts"
+        android:id="@+id/multiboxingHeader"
+        android:summary="@string/multiboxing_desc" />
+
+    <header
+        android:fragment="com.pokescanner.settings.SettingsFragment"
+        android:title="@string/category_map_options"
+        android:summary="@string/map_options_desc" >
+        <extra
+            android:name="page"
+            android:value="mapOptions"/>
+    </header>
+
+    <header
+        android:fragment="com.pokescanner.settings.SettingsFragment"
+        android:title="@string/category_clear"
+        android:summary="@string/clear_options_desc" >
+        <extra
+            android:name="page"
+            android:value="clearOptions"/>
+    </header>
+
+    <header
+        android:fragment="com.pokescanner.settings.SettingsFragment"
+        android:title="Miscellaneous"
+        android:summary="@string/misc_options_desc" >
+        <extra
+            android:name="page"
+            android:value="miscOptions"/>
+    </header>
+
+    <header
+        android:title="Create Backup"
+        android:summary="Save all your settings to a backup file"
+        android:id="@+id/createBackup"/>
+
+    <header
+        android:title="Load Settings"
+        android:summary="Load a previously created backup file"
+        android:id="@+id/loadSettings"/>
+
+    <header
+        android:title="About us"
+        android:fragment="com.pokescanner.settings.AboutUsFragment">
+        <extra
+            android:name="page"
+            android:value="aboutUs"/>
+    </header>
+
+    <header
+        android:title="@string/logout"
+        android:id="@+id/logoutHeader"/>
+
+</preference-headers>
